@@ -18,8 +18,4 @@ public class Country {
 
     @Column
     public String name;
-
-    @OneToMany(mappedBy = "country")
-    //@JsonBackReference
-    public Set<User> users;
 }

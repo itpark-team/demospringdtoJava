@@ -1,5 +1,6 @@
 package com.example.demospringdto.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -28,6 +29,5 @@ public class User {
 
     @ManyToOne
     @JoinColumn(name="id_country")
-    //@JsonManagedReference
     public Country country;
 }
